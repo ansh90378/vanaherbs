@@ -102,10 +102,33 @@
   .parallax-band {
     height: 340px;
   }
+  .parallax-band__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   /* Hero scroll cue */
   .hero__scroll-cue {
     display: none;
+  }
+}
+
+/* =========================
+   RESPONSIVE PARALLAX IMAGE
+========================= */
+
+@media (max-width: 1000px){
+
+  .parallax-band{
+      height: auto;
+      min-height: 400px;
+  }
+
+  .parallax-band__img{
+      width: auto;
+      height: auto;
+      object-fit: contain;
   }
 }
 
